@@ -1,0 +1,112 @@
+#ancho-Contacto{width: 1920px;
+    height: 1080px;}
+
+html{font-size: 62.5%;}
+
+*{margin: 0;
+padding: 0;}
+
+
+@font-face{font-family: Bebas;
+src: url(../Fuentes/Bebas.ttf)}
+
+body{
+overflow: scroll;
+background-image: url(../Multimedia/Fondo-Contacto.png);
+background-size: cover;
+background-repeat: no-repeat;
+font-family: 'Rajdhani', sans-serif;
+}
+
+
+
+nav{
+text-align: center;
+font-size: 3rem;
+background-color: whitesmoke;
+}
+
+.nav li{
+
+display:inline-block;
+list-style: none;
+text-align: center;
+padding-right: 60px;
+padding-left: 60px;
+padding-top:25px;
+padding-bottom: 40px;}
+
+.nav a{
+
+text-decoration: none;
+text-align: center;
+font-family: Bebas;
+color: #06101b;
+}
+
+.logoInicio img {
+width: 96px;
+height: 96px;
+position: absolute;
+display:inline-block;
+text-align: center;}
+
+section{text-align: center;
+        padding-top: 200px;}
+
+.titulo1{font-size: 4rem;
+        color: #ec6735}
+
+.cont{font-size: 3rem;
+    color: whitesmoke;
+    padding-bottom: 15px;}
+
+.label{font-size: 2.5rem;
+    padding-right: 10px;
+    padding-left: 20px;
+    padding-bottom: 50px;
+    color: #ec6735;}
+
+    footer{
+        display: inline-block;
+        position: fixed;
+        bottom: 0px;
+        
+        right: 10px;
+        text-align: center;
+        
+        
+    }
+    
+    .logos1{
+        display: inline-block;
+        height: 90px;
+        width: 90px;
+        padding-right: 30px;
+        text-decoration: none;
+        }
+    
+        .logos2{
+            height: 90px;
+            width: 90px;
+            padding-right: 13px;
+            text-decoration: none;}
+    
+            .logos3{
+                height: 90px;
+                width: 90px;
+                padding-right: 15px;
+                text-decoration: none;}
+    
+    
+    
+    footer a{text-decoration: none;}
+
+    /* Animaciones */
+
+header a img:hover {filter:grayscale(50%);
+    transition:  all 1s;}
+
+nav ul li a:hover{color:#ec6735;}
+
+footer div a img:hover {transform: translateY(-10px);}

@@ -1,0 +1,118 @@
+
+
+html{font-size: 62.5%;}
+
+*{margin: 0;
+padding: 0;}
+
+
+@font-face{font-family: Bebas;
+src: url(../Fuentes/Bebas.ttf)}
+
+body{
+overflow: scroll;
+background-image: url(../Multimedia/Fondo-Blanco.jpg.png);
+background-size: cover;
+background-repeat: no-repeat;
+font-family: 'Rajdhani', sans-serif;
+}
+
+
+/* Nav */
+
+.logoNav{width: 96px;
+    height: 96px;}
+
+header{display: flex;
+}
+
+.boton{background-color: whitesmoke;}
+
+nav{
+    font-size: 3rem;
+    font-family: Bebas;
+    width: 100vw;
+    background-color: #ec6735;
+    color: #ec6735;
+}
+
+nav li{padding-left: 20px;
+    padding-right: 20px;}
+
+nav li a{text-align: center;}
+
+.Titulos{padding-top: 100px;
+            font-size: 4rem;
+        text-align: center;
+        font-family: Bebas;}
+
+article{display: flex;
+        flex-flow: column wrap;
+        text-align: center;}
+
+article div p{display: flex;
+        flex-flow: column wrap;
+        text-align: center;
+        font-size: 2rem;}
+
+
+.pc {width: 100vw;}
+
+
+        /*Footer */
+footer{text-align: end;
+        padding-top: 50px;
+}
+
+.logos{height: 90px;
+    width: 90px;
+    bottom: 0px;
+    text-decoration: none;
+    }
+
+.redes{font-family: 'Rajdhani', sans-serif;
+        font-size: 4rem;}
+
+footer a{text-decoration: none;
+}
+
+
+@media screen and (max-width: 940px) {
+
+    article div img{width: 100vw;
+                    height: 400px;}
+
+                    article div p{
+                        font-size: 1.5rem;}
+    
+}
+
+@media screen and (max-width: 670px) {
+
+    article div img{text-align: center;
+                    width: 100vw;
+                    height: 200px;}
+
+                    article div p{
+                        font-size: 1rem;}
+
+    
+}
+
+
+
+        /* Animaciones */
+
+header a img:hover {filter:grayscale(50%);
+    transition:  all 1s;}
+
+nav ul li a:hover{color:#06101b;}
+
+footer div a img:hover {transform: translateY(-10px);}
+
+main section article img:hover {transform: scale(1.05,1.05);}
+
+footer div a img:hover {transform: translateY(-10px);
+    box-shadow: 0 0 30px #06101b;
+    transition: all .8s ;
+    border-radius: 80%;}
