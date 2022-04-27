@@ -1,0 +1,79 @@
+/* Barra Nav */
+header {
+  display: flex; }
+  header nav {
+    font-size: 3rem;
+    font-family: Bebas;
+    width: 100vw;
+    background-color: #faf6f1;
+    color: #ec6735; }
+  header li {
+    padding-left: 20px;
+    padding-right: 20px; }
+  header a {
+    text-align: center; }
+  header .logoNav {
+    width: 96px;
+    height: 96px; }
+    header .logoNav:hover {
+      filter: grayscale(50%);
+      transition: all 1s; }
+
+html {
+  font-size: 62.5%; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+@font-face {
+  font-family: Bebas;
+  src: url(../Fuentes/Bebas.ttf); }
+
+body {
+  background-image: url(../Multimedia/Fondo-Somos2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Rajdhani', sans-serif; }
+
+/* Main */
+.reducidoS {
+  width: 40%; }
+
+main {
+  padding-top: 50px;
+  padding-right: 100px;
+  justify-content: flex-end;
+  font-size: 2.1rem;
+  color: #faf6f1; }
+
+/* Section Somos */
+section {
+  display: flex;
+  width: 40%; }
+  section .tituloSomos {
+    font-size: 5rem;
+    padding-bottom: 10px; }
+  section .espaciadoP {
+    padding-bottom: 10px; }
+  section .serviciosPreg {
+    font-size: 3rem; }
+
+/* Footer */
+footer {
+  text-align: end; }
+  footer a {
+    text-decoration: none; }
+  footer .logos {
+    height: 90px;
+    width: 90px;
+    bottom: 0px;
+    text-decoration: none; }
+    footer .logos:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 20px whitesmoke;
+      transition: all .8s;
+      border-radius: 80%; }
+  footer .redes {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 4rem; }

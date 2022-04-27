@@ -1,0 +1,23 @@
+/* Barra Nav */
+
+header{display: flex;
+
+    nav{
+        font-size: 3rem;
+        font-family: Bebas;
+        width: 100vw;
+        background-color:$blancoHueso ;
+        color: $naranjaTigre;}
+    
+        li{padding-left: 20px;
+            padding-right: 20px;}
+    
+            a{text-align: center;}
+    
+            .logoNav{width: 96px;
+                height: 96px;
+                &:hover {filter:grayscale(50%);
+                    transition:  all 1s;
+                    }
+            }
+    }
