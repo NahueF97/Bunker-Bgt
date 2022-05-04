@@ -1,3 +1,53 @@
 $naranjaTigre: #ec6735;
 $tamañoLogo: 90px;
 $blancoHueso: #faf6f1;
+
+/* Mapeo */
+$botones: (
+fondoB: #faf6f1,
+fondoN:#ec6735,
+);
+
+@each $fondo, $fondoC in $botones {
+    .btn--#{$fondo}
+    {
+        background-color: $fondoC;
+    }  
+}
+
+/* Tamaño Boton */
+
+$tamanioB: (
+grande:300px,
+peque:100px,
+mini:50px
+);
+
+@each $medida, $pixel in $tamanioB{
+    .btn--#{$medida}
+    {
+        width: $pixel;
+    }  
+}
+
+/*Color Letra Boton*/
+
+$letraB: (
+letra1: #ec6735,
+letra2:#faf6f1
+);
+
+@each $tipo, $col in $letraB {
+    .btn--#{$tipo}
+    {
+        color: $col;
+    }  
+}
+
+/* Map Get - Texto Principal */
+
+
+$textoP: (
+    tamaño: 2.1rem,
+    letra: $blancoHueso,
+)

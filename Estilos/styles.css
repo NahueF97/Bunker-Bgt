@@ -1,3 +1,28 @@
+@charset "UTF-8";
+/* Mapeo */
+.btn--fondoB {
+  background-color: #faf6f1; }
+
+.btn--fondoN {
+  background-color: #ec6735; }
+
+/* Tamaño Boton */
+.btn--grande {
+  width: 300px; }
+
+.btn--peque {
+  width: 100px; }
+
+.btn--mini {
+  width: 50px; }
+
+/*Color Letra Boton*/
+.btn--letra1 {
+  color: #ec6735; }
+
+.btn--letra2 {
+  color: #faf6f1; }
+
 /* Barra Nav */
 header {
   display: flex; }
@@ -51,6 +76,8 @@ main {
 section {
   display: flex;
   width: 40%; }
+  section ul {
+    padding-bottom: 20px3; }
   section .tituloSomos {
     font-size: 5rem;
     padding-bottom: 10px; }
@@ -58,10 +85,25 @@ section {
     padding-bottom: 10px; }
   section .serviciosPreg {
     font-size: 3rem; }
+  section .botonIntel, section .boton--nvidia, section .boton--razer {
+    width: 90px;
+    height: 90px; }
+    section .botonIntel:hover, section .boton--nvidia:hover, section .boton--razer:hover {
+      transform: translateY(-10px);
+      background-color: #0071c5;
+      box-shadow: 0 0 20px #0071c5;
+      transition: all .8s;
+      border-radius: 80%; }
+  section .boton--nvidia:hover {
+    background-color: #a4ec25;
+    box-shadow: 0 0 20px #a4ec25; }
+  section .boton--razer:hover {
+    background-color: #01ace8;
+    box-shadow: 0 0 20px #01ace8; }
 
 /* Footer */
 footer {
-  text-align: end; }
+  text-align: start; }
   footer a {
     text-decoration: none; }
   footer .logos {
