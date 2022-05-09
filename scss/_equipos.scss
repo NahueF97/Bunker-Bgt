@@ -1,0 +1,101 @@
+.bodyEquipos{
+    overflow: scroll;
+    background-image: url(../Multimedia/Fondo-Blanco.jpg.pngS);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Rajdhani', sans-serif;
+    }
+
+    .headerEquipos{display: flex;
+
+        nav{
+            font-size: 3rem;
+            font-family: Bebas;
+            width: 100vw;
+            background-color:$naranjaTigre ;
+            color: $naranjaTigre;}
+        
+            li{padding-left: 20px;
+                padding-right: 20px;}
+        
+                a{text-align: center;}
+        
+                .logoNav{width: 96px;
+                    height: 96px;
+                    &:hover {filter:grayscale(50%);
+                        transition:  all 1s;
+                        }
+                }
+        }
+
+.Equipos{
+
+    .Titulos{padding-top: 100px;
+        font-size: 4rem;
+    text-align: center;
+    font-family: Bebas;}
+
+.articleEquipos{display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+
+    .parrafoEquipos{display: flex;
+        flex-flow: column wrap;
+        text-align: center;
+        font-size: 2rem;}
+
+        .Pc:hover {transform: scale(1.05,1.05);}
+
+    }
+
+    .pc {width: 100vw;}
+}
+
+footer{text-align: end;
+    padding-top: 50px;
+
+    .logos{height: $tamañoLogo;
+        width: $tamañoLogo;
+        bottom: 0px;
+        text-decoration: none;
+
+        &:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 0 30px $naranjaTigre;
+                transition: all .8s ;
+                border-radius: 80%;
+        }
+    }
+
+        .redes{font-family: 'Rajdhani', sans-serif;
+            font-size: 4rem;}
+
+            a{text-decoration: none;}
+}
+
+
+
+
+@media screen and (max-width: 940px) {
+
+    .Equipos {
+        
+        img{width: 100vw;
+            height: 400px;}
+
+         p{font-size: 1.5rem;}
+}
+}
+
+
+@media screen and (max-width: 670px) {
+
+    .Equipos {
+        
+        img{text-align: center;
+                    width: 100vw;
+                    height: 200px;}
+        p{font-size: 1rem;}
+
+}
+}

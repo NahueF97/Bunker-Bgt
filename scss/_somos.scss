@@ -1,0 +1,138 @@
+.bodySomos{
+    background-image: url(../Multimedia/Fondo-Somos2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+/* Main */
+
+.reducidoS {width: 40%;}
+
+.mainSomos{padding-top: 50px;
+    padding-right: 100px;
+    justify-content: flex-end;
+    font-size: map-get($textoP, tamaño);
+    color: map-get($textoP, letra);
+    }
+
+
+/* Section Somos */
+
+.sectionSomos{display: flex;
+        width: 40%;
+
+
+
+    .tituloSomos{font-size: 5rem;
+        padding-bottom: 10px;}
+
+        ul{
+            padding-bottom: 20px;}
+
+        .espaciadoP{padding-bottom: 10px;}
+
+        .serviciosPreg{font-size: 3rem;
+                        padding-top: 20px;}
+
+/* Mixin*/
+
+@mixin efectoR($transicion, $borde){
+
+    transition: $transicion;
+    border-radius: $borde;
+
+}
+
+
+/* Seccion @extend */
+
+        .botonIntel{
+
+            width: $tamañoLogo;
+            height: $tamañoLogo;
+
+            &:hover {transform: translateY(-10px);
+                @include efectoR(all .8s, 80%);
+                background-color: #0071c5;
+                box-shadow: 0 0 20px #0071c5;
+                transition: all .8s ;
+                border-radius: 80%;}
+        }
+
+        .boton--nvidia{@extend .botonIntel;
+
+            &:hover {
+                @include efectoR(all .8s, 80%);
+                background-color: #a4ec25;
+                box-shadow: 0 0 20px #a4ec25;
+                }                   
+        }
+
+        .boton--razer{@extend .botonIntel;
+
+            &:hover {
+                @include efectoR(all .8s, 80%);
+                background-color: #01ace8;
+                box-shadow: 0 0 20px #01ace8;
+                }                   
+        }
+
+}
+
+
+/* Footer */
+
+.footerSomos{text-align:start;
+
+    a{text-decoration: none;
+    }
+    .logos{height: $tamañoLogo;
+        width: $tamañoLogo;
+        bottom: 0px;
+        text-decoration: none;
+
+        &:hover {transform: translateY(-10px);
+            box-shadow: 0 0 20px whitesmoke;
+            transition: all .8s ;
+            border-radius: 80%;}
+        }
+
+        .redes{font-family: 'Rajdhani', sans-serif;
+            font-size: 4rem;}
+    
+}
+
+
+@media screen and (max-width: 940px) {
+
+    
+    .mainSomos{justify-content: space-around;
+    
+    article{text-align: center;
+        font-size: 1.5rem;
+        
+        ul{padding-bottom: 20px;}
+
+        
+    }
+    }
+
+    @media screen and (max-width: 670px) {
+
+        .mainSomos{justify-content: flex-start;
+    
+            article{text-align: left;
+                font-size: 1rem;
+                
+                ul{padding-bottom: 20px;}
+    }
+    }
+
+    .footerSomos{text-align: end;}
+    
+    }
+
+        
+}
+

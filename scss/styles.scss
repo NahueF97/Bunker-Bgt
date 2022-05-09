@@ -1,5 +1,8 @@
 @import "variable";
 @import "barraNavegador";
+@import "index";
+@import "somos";
+@import "equipos";
 
 
 
@@ -12,103 +15,7 @@ html{font-size: 62.5%;}
 @font-face{font-family: Bebas;
     src: url(../Fuentes/Bebas.ttf)}
 
-body{
-    background-image: url(../Multimedia/Fondo-Somos2.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    font-family: 'Rajdhani', sans-serif;
-}
 
-
-
-
-/* Main */
-
-.reducidoS {width: 40%;}
-
-main{padding-top: 50px;
-    padding-right: 100px;
-    justify-content: flex-end;
-    font-size: map-get($textoP, tamaño);
-    color: map-get($textoP, letra);
-    }
-
-
-/* Section Somos */
-
-section{display: flex;
-        width: 40%;
-
-        ul{padding-bottom: 20px3;}
-
-    .tituloSomos{font-size: 5rem;
-        padding-bottom: 10px;}
-
-        .espaciadoP{padding-bottom: 10px;}
-
-        .serviciosPreg{font-size: 3rem;}
-
-/* Mixin*/
-
-@mixin resplandor($sombreado, $color){
-
-    background-color: $color;
-    box-shadow: $sombreado;
-
-}
-
-
-/* Seccion @extend */
-
-        .botonIntel{
-
-            width: $tamañoLogo;
-            height: $tamañoLogo;
-
-            &:hover {transform: translateY(-10px);
-                @include sombreado(#0071c5, 0 0 20px #0071c5);
-                transition: all .8s ;
-                border-radius: 80%;}
-        }
-
-        .boton--nvidia{@extend .botonIntel;
-
-            &:hover {
-                @include sombreado(#a4ec25, 0 0 20px #a4ec25);
-                }                   
-        }
-
-        .boton--razer{@extend .botonIntel;
-
-            &:hover {
-                @include sombreado(#01ace8, 0 0 20px #01ace8);
-                }                   
-        }
-
-}
-
-
-/* Footer */
-
-footer{text-align:start;
-
-    a{text-decoration: none;
-    }
-    .logos{height: $tamañoLogo;
-        width: $tamañoLogo;
-        bottom: 0px;
-        text-decoration: none;
-
-        &:hover {transform: translateY(-10px);
-            box-shadow: 0 0 20px whitesmoke;
-            transition: all .8s ;
-            border-radius: 80%;}
-        }
-
-        .redes{font-family: 'Rajdhani', sans-serif;
-            font-size: 4rem;}
-    
-}
 
 
 

@@ -23,6 +23,7 @@
 .btn--letra2 {
   color: #faf6f1; }
 
+/* Map Get - Texto Principal */
 /* Barra Nav */
 header {
   display: flex; }
@@ -44,6 +45,271 @@ header {
       filter: grayscale(50%);
       transition: all 1s; }
 
+.bodyIndex {
+  background-image: url(../Multimedia/Fondo-Index2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Rajdhani', sans-serif; }
+
+.sectionIndex {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  color: whitesmoke;
+  font-size: 2.5rem; }
+  .sectionIndex h1 {
+    padding-bottom: 35px;
+    text-align: center; }
+  .sectionIndex .videoY {
+    width: 640px;
+    height: 360px; }
+
+.articleIndex {
+  display: flex;
+  color: whitesmoke;
+  text-align: center;
+  padding-bottom: 100px; }
+  .articleIndex form {
+    font-size: 2rem; }
+
+.logos1 {
+  width: 90px;
+  height: 90px; }
+  .logos1:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px whitesmoke;
+    transition: all .8s;
+    border-radius: 80%; }
+
+.footerIndex {
+  text-align: end; }
+
+@media screen and (max-width: 940px) {
+  .sectionIndex {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    text-align: center; }
+    .sectionIndex h1 {
+      padding-bottom: 15px;
+      text-align: center;
+      font-size: 1.5rem; }
+    .sectionIndex .videoY {
+      width: 320px;
+      height: 180px; } }
+
+.articleIndex .textoIndex {
+  font-size: 1.5rem; }
+
+.articleIndex .opcionesForm {
+  font-size: 1.5rem; }
+
+@media screen and (max-width: 670px) {
+  .sectionIndex {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    color: whitesmoke;
+    font-size: 1rem;
+    text-align: center; }
+    .sectionIndex h1 {
+      padding-bottom: 10px;
+      text-align: center;
+      font-size: 1rem; }
+    .sectionIndex .videoY {
+      width: 220px;
+      height: 120px; } }
+
+.articleIndex .textoIndex {
+  font-size: 0.8rem; }
+
+.articleIndex .opcionesForm {
+  font-size: 0.8rem; }
+
+.bodySomos {
+  background-image: url(../Multimedia/Fondo-Somos2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Rajdhani', sans-serif; }
+
+/* Main */
+.reducidoS {
+  width: 40%; }
+
+.mainSomos {
+  padding-top: 50px;
+  padding-right: 100px;
+  justify-content: flex-end;
+  font-size: 2.1rem;
+  color: #faf6f1; }
+
+/* Section Somos */
+.sectionSomos {
+  display: flex;
+  width: 40%;
+  /* Mixin*/
+  /* Seccion @extend */ }
+  .sectionSomos .tituloSomos {
+    font-size: 5rem;
+    padding-bottom: 10px; }
+  .sectionSomos ul {
+    padding-bottom: 20px; }
+  .sectionSomos .espaciadoP {
+    padding-bottom: 10px; }
+  .sectionSomos .serviciosPreg {
+    font-size: 3rem;
+    padding-top: 20px; }
+  .sectionSomos .botonIntel, .sectionSomos .boton--nvidia, .sectionSomos .boton--razer {
+    width: 90px;
+    height: 90px; }
+    .sectionSomos .botonIntel:hover, .sectionSomos .boton--nvidia:hover, .sectionSomos .boton--razer:hover {
+      transform: translateY(-10px);
+      transition: all 0.8s;
+      border-radius: 80%;
+      background-color: #0071c5;
+      box-shadow: 0 0 20px #0071c5;
+      transition: all .8s;
+      border-radius: 80%; }
+  .sectionSomos .boton--nvidia:hover {
+    transition: all 0.8s;
+    border-radius: 80%;
+    background-color: #a4ec25;
+    box-shadow: 0 0 20px #a4ec25; }
+  .sectionSomos .boton--razer:hover {
+    transition: all 0.8s;
+    border-radius: 80%;
+    background-color: #01ace8;
+    box-shadow: 0 0 20px #01ace8; }
+
+/* Footer */
+.footerSomos {
+  text-align: start; }
+  .footerSomos a {
+    text-decoration: none; }
+  .footerSomos .logos {
+    height: 90px;
+    width: 90px;
+    bottom: 0px;
+    text-decoration: none; }
+    .footerSomos .logos:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 20px whitesmoke;
+      transition: all .8s;
+      border-radius: 80%; }
+  .footerSomos .redes {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 4rem; }
+
+@media screen and (max-width: 940px) {
+  .mainSomos {
+    justify-content: space-around; }
+    .mainSomos article {
+      text-align: center;
+      font-size: 1.5rem; }
+      .mainSomos article ul {
+        padding-bottom: 20px; } }
+
+@media screen and (max-width: 940px) and (max-width: 670px) {
+  .mainSomos {
+    justify-content: flex-start; }
+    .mainSomos article {
+      text-align: left;
+      font-size: 1rem; }
+      .mainSomos article ul {
+        padding-bottom: 20px; }
+  .footerSomos {
+    text-align: end; } }
+
+.bodyEquipos {
+  overflow: scroll;
+  background-image: url(../Multimedia/Fondo-Blanco.jpg.pngS);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Rajdhani', sans-serif; }
+
+.headerEquipos {
+  display: flex; }
+  .headerEquipos nav {
+    font-size: 3rem;
+    font-family: Bebas;
+    width: 100vw;
+    background-color: #ec6735;
+    color: #ec6735; }
+  .headerEquipos li {
+    padding-left: 20px;
+    padding-right: 20px; }
+  .headerEquipos a {
+    text-align: center; }
+  .headerEquipos .logoNav {
+    width: 96px;
+    height: 96px; }
+    .headerEquipos .logoNav:hover {
+      filter: grayscale(50%);
+      transition: all 1s; }
+
+.Equipos .Titulos {
+  padding-top: 100px;
+  font-size: 4rem;
+  text-align: center;
+  font-family: Bebas; }
+
+.Equipos .articleEquipos {
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center; }
+  .Equipos .articleEquipos .parrafoEquipos {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    font-size: 2rem; }
+  .Equipos .articleEquipos .Pc:hover {
+    transform: scale(1.05, 1.05); }
+
+.Equipos .pc {
+  width: 100vw; }
+
+footer {
+  text-align: end;
+  padding-top: 50px; }
+  footer .logos {
+    height: 90px;
+    width: 90px;
+    bottom: 0px;
+    text-decoration: none; }
+    footer .logos:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 30px #ec6735;
+      transition: all .8s;
+      border-radius: 80%; }
+  footer .redes {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 4rem; }
+  footer a {
+    text-decoration: none; }
+
+@media screen and (max-width: 940px) {
+  .Equipos img {
+    width: 100vw;
+    height: 400px; }
+  .Equipos p {
+    font-size: 1.5rem; } }
+
+@media screen and (max-width: 670px) {
+  .Equipos img {
+    text-align: center;
+    width: 100vw;
+    height: 200px; }
+  .Equipos p {
+    font-size: 1rem; } }
+
 html {
   font-size: 62.5%; }
 
@@ -54,68 +320,3 @@ html {
 @font-face {
   font-family: Bebas;
   src: url(../Fuentes/Bebas.ttf); }
-
-body {
-  background-image: url(../Multimedia/Fondo-Somos2.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  font-family: 'Rajdhani', sans-serif; }
-
-/* Main */
-.reducidoS {
-  width: 40%; }
-
-main {
-  padding-top: 50px;
-  padding-right: 100px;
-  justify-content: flex-end;
-  font-size: 2.1rem;
-  color: #faf6f1; }
-
-/* Section Somos */
-section {
-  display: flex;
-  width: 40%; }
-  section ul {
-    padding-bottom: 20px3; }
-  section .tituloSomos {
-    font-size: 5rem;
-    padding-bottom: 10px; }
-  section .espaciadoP {
-    padding-bottom: 10px; }
-  section .serviciosPreg {
-    font-size: 3rem; }
-  section .botonIntel, section .boton--nvidia, section .boton--razer {
-    width: 90px;
-    height: 90px; }
-    section .botonIntel:hover, section .boton--nvidia:hover, section .boton--razer:hover {
-      transform: translateY(-10px);
-      background-color: #0071c5;
-      box-shadow: 0 0 20px #0071c5;
-      transition: all .8s;
-      border-radius: 80%; }
-  section .boton--nvidia:hover {
-    background-color: #a4ec25;
-    box-shadow: 0 0 20px #a4ec25; }
-  section .boton--razer:hover {
-    background-color: #01ace8;
-    box-shadow: 0 0 20px #01ace8; }
-
-/* Footer */
-footer {
-  text-align: start; }
-  footer a {
-    text-decoration: none; }
-  footer .logos {
-    height: 90px;
-    width: 90px;
-    bottom: 0px;
-    text-decoration: none; }
-    footer .logos:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 0 20px whitesmoke;
-      transition: all .8s;
-      border-radius: 80%; }
-  footer .redes {
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 4rem; }

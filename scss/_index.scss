@@ -1,0 +1,110 @@
+.bodyIndex {background-image: url(../Multimedia/Fondo-Index2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Rajdhani', sans-serif;
+    
+}
+
+.sectionIndex { 
+            padding-top: 100px;
+            padding-bottom: 100px;
+            display: flex; 
+            flex-flow: row wrap;
+            justify-content: center;
+            color: whitesmoke;
+            font-size: 2.5rem;
+
+            h1 { padding-bottom: 35px;
+                text-align: center;}
+
+            .videoY{ width: 640px;
+                height: 360px;}
+            
+            
+    }
+
+.articleIndex { 
+            display: flex;
+            color: whitesmoke;
+            text-align: center;
+            padding-bottom: 100px;
+
+            form { font-size: 2rem;}
+}
+
+
+
+    .logos1{width: $tamañoLogo;
+        height: $tamañoLogo;
+
+    &:hover {transform: translateY(-10px);
+        box-shadow: 0 0 20px whitesmoke;
+        transition: all .8s ;
+        border-radius: 80%;}
+
+}
+
+.footerIndex{text-align: end;
+}
+
+@media screen and (max-width: 940px) {
+
+    .sectionIndex { 
+        padding-top: 50px;
+        padding-bottom: 50px;
+        display: flex; 
+        flex-flow: row wrap;
+        justify-content: center;
+        color: whitesmoke;
+        font-size: 1.5rem;
+        text-align: center;
+
+        h1 { padding-bottom: 15px;
+            text-align: center;
+            font-size: 1.5rem;}
+
+        .videoY{ width: 320px;
+        height: 180px;
+        }}
+
+        
+
+}
+
+.articleIndex{
+
+    .textoIndex{font-size: 1.5rem;}
+    .opcionesForm{font-size: 1.5rem;}
+
+}
+
+@media screen and (max-width: 670px) {
+
+    .sectionIndex { 
+        padding-top: 30px;
+        padding-bottom: 30px;
+        display: flex; 
+        flex-flow: row wrap;
+        justify-content: center;
+        color: whitesmoke;
+        font-size: 1rem;
+        text-align: center;
+
+        h1 { padding-bottom: 10px;
+            text-align: center;
+            font-size: 1rem;}
+
+        .videoY{ width: 220px;
+        height: 120px;
+        }}
+
+        
+
+}
+
+.articleIndex{
+
+    .textoIndex{font-size: 0.8rem;}
+    .opcionesForm{font-size: 0.8rem;}
+
+}
