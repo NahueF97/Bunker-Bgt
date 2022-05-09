@@ -12,7 +12,7 @@
             flex-flow: row wrap;
             justify-content: center;
             color: whitesmoke;
-            font-size: 2.5rem;
+            font-size: 3rem;
 
             h1 { padding-bottom: 35px;
                 text-align: center;}
@@ -28,9 +28,16 @@
             color: whitesmoke;
             text-align: center;
             padding-bottom: 100px;
+            font-size: 2rem;
+            .tituloArticleIndex{font-size: 2.5rem;}
 
-            form { font-size: 2rem;}
+            .formIndex{
+                        .textoIndex{font-size: 2rem;}
+                        .opcionesForm{font-size: 2rem;}
+            }
+
 }
+
 
 
 
@@ -69,13 +76,18 @@
 
         
 
-}
+
 
 .articleIndex{
 
+    font-size: 1.5rem;
+    .tituloArticleIndex{font-size: 2rem;}
+
+    .formIndex{
     .textoIndex{font-size: 1.5rem;}
     .opcionesForm{font-size: 1.5rem;}
-
+    }
+}
 }
 
 @media screen and (max-width: 670px) {
@@ -99,12 +111,14 @@
         }}
 
         
-
-}
-
 .articleIndex{
 
+    font-size: 0.8rem;
+    .tituloArticleIndex{font-size: 1rem;}
+
+    .formIndex{
     .textoIndex{font-size: 0.8rem;}
     .opcionesForm{font-size: 0.8rem;}
-
+    }
+}
 }
