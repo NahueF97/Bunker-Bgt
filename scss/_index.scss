@@ -74,10 +74,6 @@
         height: 180px;
         }}
 
-        
-
-
-
 .articleIndex{
 
     font-size: 1.5rem;
@@ -87,7 +83,12 @@
     .textoIndex{font-size: 1.5rem;}
     .opcionesForm{font-size: 1.5rem;}
     }
+
+.footerIndex{text-align: center;
 }
+
+}
+
 }
 
 @media screen and (max-width: 670px) {
@@ -118,7 +119,15 @@
 
     .formIndex{
     .textoIndex{font-size: 0.8rem;}
-    .opcionesForm{font-size: 0.8rem;}
-    }
+    .opcionesForm{font-size: 0.8rem;}}
+
 }
+
+.footerIndex{text-align: center;
+}
+
+.logos1{width: 60px;
+    height: 60px;
+}
+
 }

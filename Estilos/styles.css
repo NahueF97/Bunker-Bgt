@@ -115,7 +115,9 @@ header {
     .articleIndex .formIndex .textoIndex {
       font-size: 1.5rem; }
     .articleIndex .formIndex .opcionesForm {
-      font-size: 1.5rem; } }
+      font-size: 1.5rem; }
+    .articleIndex .footerIndex {
+      text-align: center; } }
 
 @media screen and (max-width: 670px) {
   .sectionIndex {
@@ -141,7 +143,12 @@ header {
     .articleIndex .formIndex .textoIndex {
       font-size: 0.8rem; }
     .articleIndex .formIndex .opcionesForm {
-      font-size: 0.8rem; } }
+      font-size: 0.8rem; }
+  .footerIndex {
+    text-align: center; }
+  .logos1 {
+    width: 60px;
+    height: 60px; } }
 
 .bodySomos {
   background-image: url(../Multimedia/Fondo-Somos2.png);
@@ -239,7 +246,7 @@ header {
 
 .bodyEquipos {
   overflow: scroll;
-  background-image: url(../Multimedia/Fondo-Blanco.jpg.pngS);
+  background-image: url(../Multimedia/Fondo-Blanco.jpg.png);
   background-size: cover;
   background-repeat: no-repeat;
   font-family: 'Rajdhani', sans-serif; }
